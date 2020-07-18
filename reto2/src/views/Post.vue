@@ -1,5 +1,6 @@
 <template>
     <div class="posts-view">
+        <h2>Post List</h2>
         <ListCard :list="list"/>
     </div>
 </template>

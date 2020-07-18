@@ -1,13 +1,13 @@
 <template>
-    <li>
-        <div>
+    <li class="card">
+        <div class="row">
             <strong>UserName: </strong> <span>{{ item.username }}</span>
+        </div>
+        <div class="row">
             <strong>Name: </strong> <span>{{ item.name }}</span>
-            <strong>Email: </strong> <span>{{ item.email }}</span>
-            <strong>Address: </strong> <span>{{ item.address.street }} {{ item.company.suite }}, {{ item.company.city }}</span>
-            <strong>Phone: </strong> <span>{{ item.phone }}</span>
-            <strong>WebSite: </strong> <span>{{ item.website }}</span>
-            <strong>Empresa: </strong> <span>{{ item.company.name }}</span>
+        </div>
+        <div class="row button">
+            <router-link :to="`/user/${item.id}`">Ver más</router-link>
         </div>
     </li>
 </template>

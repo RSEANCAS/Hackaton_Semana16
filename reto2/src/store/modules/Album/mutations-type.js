@@ -1,4 +1,6 @@
-const setList = "ALBUM setList";
+const prefij = "ALBUM";
+
+const setList = `${prefij} setList`;
 
 export default {
     setList

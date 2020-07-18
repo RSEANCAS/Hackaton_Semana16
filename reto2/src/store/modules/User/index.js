@@ -2,7 +2,8 @@ import actions from './actions';
 import mutations from './mutations';
 
 const state = {
-    list: []
+    list: [],
+    user: null
 }
 
 const namespaced = true;

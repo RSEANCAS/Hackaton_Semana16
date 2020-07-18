@@ -1,8 +1,10 @@
 <template>
-    <li>
-        <div>
+    <li class="card">
+        <div class="row">
             <strong>Title: </strong> <span>{{ item.title }}</span>
-            <strong>Body: </strong> <span>{{ item.body }}</span>
+        </div>
+        <div class="row button">
+            <router-link :to="`/post/${item.id}`">Ver más</router-link>
         </div>
     </li>
 </template>

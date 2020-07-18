@@ -1,5 +1,6 @@
 <template>
     <div class="users-view">
+        <h2>User List</h2>
         <ListCard :list="list"/>
     </div>
 </template>

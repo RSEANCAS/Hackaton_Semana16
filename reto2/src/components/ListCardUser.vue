@@ -1,5 +1,5 @@
 <template>
-    <ul>
+    <ul class="list">
         <Card v-for="item in list" :key="item.id" :item="item"/>
     </ul>
 </template>

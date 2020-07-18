@@ -1,5 +1,6 @@
 <template>
     <div class="albums-view">
+        <h2>Album List</h2>
         <ListCard :list="list"/>
     </div>
 </template>

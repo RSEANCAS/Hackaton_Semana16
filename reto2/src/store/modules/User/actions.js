@@ -7,6 +7,13 @@ const actions = {
         fetch(url)
             .then(r => r.json())
             .then(data => context.commit(types.setList, data));
+    },
+    getUser(context, id) {
+        let url = `https://jsonplaceholder.typicode.com/users/${id}`;
+
+        fetch(url)
+            .then(r => r.json())
+            .then(data => context.commit(types.setUser, data));
     }
 }
 
